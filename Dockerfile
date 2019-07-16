@@ -1,10 +1,10 @@
 ARG version=latest
 FROM ubuntu:$version
-#MAINTAINER JCD "jcd717@outlook.com"
+MAINTAINER NG "ng@viragegroup.com"
 
-LABEL maintainer="JCD <jcd717@outlook.com>" \
-      description="test" \
-      auteur="bruno dubois"
+LABEL maintainer="NG <ng@viragegroup.com>" \
+      description="test-docker" \
+      auteur="Nicolas Gavard"
 
 COPY heartbeat.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh ; \
